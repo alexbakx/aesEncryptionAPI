@@ -80,3 +80,19 @@ The impact that the different modes have can be seen from the output images, as 
 with ECB is still recognizable, while the images from the other two modes cannot be recognized. The
 images encrypted with CFB and CBC look like random noise, and there is no way to tell what the
 original image looked like.
+
+## Demonstration
+The demonstration takes as input a Bitmap image file, and outputs three encrypted JPG files using the three different modes of operation. It also outputs an IV file, and a keystore file with the secret key. 
+
+### Input image
+![Input](https://raw.githubusercontent.com/alexbakx/aesEncryptionAPI/master/inputImage.bmp)
+
+### ECB output JPG of the input image
+![ECB](https://github.com/alexbakx/aesEncryptionAPI/blob/master/inputImageECBEncrypted.jpg)
+
+### CFB output JPG of the input image
+![CFB](https://github.com/alexbakx/aesEncryptionAPI/blob/master/inputImageCFBEncrypted.jpg)
+
+### CBC output JPG of the input image
+![CBC](https://github.com/alexbakx/aesEncryptionAPI/blob/master/inputImageCBCEncrypted.jpg)
+
